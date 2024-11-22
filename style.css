@@ -34,3 +34,25 @@ width: 90%;
 .image-container {
     display: flex;
 }
+
+.scissor {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.rock {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 50%;
+}
+.paper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.comp-choice {
+    display: flex;
+    justify-content: center;
+}
