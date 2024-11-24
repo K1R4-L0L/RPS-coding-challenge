@@ -1,9 +1,19 @@
+html, body  {
+    background-image: linear-gradient(to  right, #ffe499, #8599ff, #f2555a );
+}
+
 .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 2%;
     margin-bottom: 2%;
+    font-family: fantasy;
+    color: rgb(80, 2, 73);
+
+    border: 5px solid rgb(168, 78, 131);
+    border-style: double;
+
 }
 
 .rps {
@@ -13,46 +23,145 @@
 }
 .buttons {
     display: flex;
-    
+    justify-content: center;
+    padding: 2%;
+    height: 50px;
+
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 .rock-image img {
-    height: 70%;
-    width: 60%;
+    height: 30%;
+    width: 50%;
 
+}
+
+.rock-image {
+    margin-top:5% ;
+margin-left: 5%;
+position: relative;
+animation-name: paper;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
 }
 
 .paper-image img {
-height: 90%;
-width: 90%;
+height: 30%;
+width: 70%;
+}
+
+.paper-image {
+    margin-top: 5%;
+    position: relative;
+  animation-name: paper;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes paper {
+    0%   {left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:0px; top:0px;}
+    75%  { left:-200px; top:0;}
+    100% { left:0px; top:0px;}
+  }
+.scissor-image {
+    margin-top: 2%;
+    position: relative;
+    animation-name: paper;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .scissor-image img {
-height: 140%;
-width: 90%;
+height: 50%;
+width: 100%;
+
 }
 
 .image-container {
     display: flex;
+    justify-content: center;
 }
 
 .scissor {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+color: rgb(112, 8, 8);
+background-color: lightcoral;
+border-radius: 40%;
 }
+.scissor:hover {
+    background-color: rgb(112, 8, 8);
+    color: lightcoral;
+  }
 .rock {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 50%;
+
+    margin-left: 3%;
+    margin-right: 7%;
+
+    color: rgb(65, 64, 5);
+background-color: rgb(239, 255, 151);
+border-radius: 40%;
+
+}
+
+.rock:hover {
+    background-color: rgb(65, 64, 5);
+    color:rgb(239, 255, 151);
+
 }
 .paper {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+
+    margin-right: 7%;
+
+    color: rgb(31, 65, 110);
+background-color: rgb(139, 160, 255);
+border-radius: 40%;
+}
+
+.paper:hover {
+    background-color: rgb(31, 65, 110);
+    color: rgb(139, 160, 255);
 }
 
 .comp-choice {
     display: flex;
     justify-content: center;
+    padding: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.player-choice {
+    display: flex;
+    justify-content: center;
+    margin-top: -12%;
+    padding: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ .score1 {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .score2 {
+        display: flex;
+        justify-content: center;
+        padding: 1%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }

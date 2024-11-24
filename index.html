@@ -3,50 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors: Ultimate Battle</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
-        <h1>Rock Paper Scissors: Ultimate battle </h1>
+        <h1>Rock Paper Scissors: Ultimate Battle</h1>
     </div>
 
     <div class="buttons">
-   <div class="rock">
-    <button type="button">rock</button>
-   </div>
+        <button class="rock">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissor">Scissors</button>
+    </div>
 
-   <div class="paper">
-    <button type="button">paper</button>
-   </div>
- 
-   <div class="scissor">
-    <button type="button">scissor</button>
-   </div>
- </div>
- <div class="rps">
-   <div class="image-container">
-    <div class="rock-image">
-        <img src="https://clipart-library.com/img/1603206.png" alt="rock clipart">
+    <div class="rps">
+        <div class="image-container">
+            <div class="rock-image">
+                <img src="https://clipart-library.com/img/1603206.png" alt="rock clipart" width="100">
+            </div>
+            <div class="paper-image">
+                <img src="https://cdn.creazilla.com/cliparts/3157130/papers-clipart-md.png" alt="paper clipart" width="100">
+            </div>
+            <div class="scissor-image">
+                <img src="https://freepngimg.com/thumb/scissor/36688-7-scissors-clipart.png" alt="scissor clipart image" width="100">
+            </div>
         </div>
-   
-           <div class="paper-image">
-            <img src="https://clipart-library.com/newhp/Paper-clipart-clipart-cliparts-for-you.jpg" alt="clipart of paper ">
-           </div>
-           <div class="scissor-image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQujEuxulMIrlkQSxP2N-zQ3GgRYH6ssMQY1v-5PJ-MVfV2VcCykNhZNjE0OsFeteb-aGs:https://freepngimg.com/thumb/scissor/36688-7-scissors-clipart.png&usqp=CAU" alt="scissor clipart image">
-               </div>
-   </div>
-</div>
-   <div class="player-choice">
-    <p>player choice:</p>
-   </div>
-   <div class="comp-choice">
-    <p>computer's choice:</p>
-   </div>
-   <div class="score">
-    <p>score:</p>
-   </div>
-  
+    </div>
+
+    <div class="player-choice">
+        <p>Player's choice: <span id="playerChoiceText">None</span></p>
+    </div>
+    <div class="comp-choice">
+        <p>Computer's choice: <span id="computerChoiceText">None</span></p>
+    </div>
+
+    <div class="score1">
+        <p>Player score: <span id="playerScore">0</span></p>
+    </div>
+    <div class="score2">
+        <p>Computer score: <span id="computerScore">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
