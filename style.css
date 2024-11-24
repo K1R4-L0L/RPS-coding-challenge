@@ -165,3 +165,24 @@ border-radius: 40%;
         padding: 1%;
         font-family: Georgia, 'Times New Roman', Times, serif;
         }
+
+
+        .reset {
+            display: flex;
+    justify-content: center;
+        }
+.resetb {
+    
+    color: rgb(54, 10, 63);
+    background-color: rgb(147, 94, 163);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.resetb:hover {
+    background-color: rgb(54, 10, 63);
+    color: rgb(147, 94, 163);
+}

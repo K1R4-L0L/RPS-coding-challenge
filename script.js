@@ -14,6 +14,7 @@ window.onload = () => {
     paperPick();
     scissorPick();
     rockPick();
+    resetPick();
 };
 
 // Function to generate computer's choice (randomly)
@@ -75,3 +76,17 @@ let scissorPick = () => {
         determineOutcome();
     });
 };
+let resetPick = () => {
+    let reset = document.querySelector(".resetb");
+    reset.addEventListener('click', () =>{
+        playerScore = 0;
+        computerScore = 0;
+        playerScoreElement.textContent = "Player Score: 0";
+        computerScoreElement.textContent = "Computer Score: 0";
+
+        playerChoiceDisplay.textContent = "Your choice: ";
+        computerChoiceDisplay.textContent = "Computer's choice: ";
+
+        alert("You resetted game!");
+    } );
+}
